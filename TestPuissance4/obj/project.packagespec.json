@@ -1,0 +1,40 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "E:\\CoursEpsi1920\\C#\\Exos\\TestPuissance4\\TestPuissance4\\TestPuissance4.csproj",
+    "projectName": "TestPuissance4",
+    "projectPath": "E:\\CoursEpsi1920\\C#\\Exos\\TestPuissance4\\TestPuissance4\\TestPuissance4.csproj",
+    "outputPath": "E:\\CoursEpsi1920\\C#\\Exos\\TestPuissance4\\TestPuissance4\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.0"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.0": {
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
