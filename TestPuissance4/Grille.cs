@@ -16,12 +16,6 @@ namespace TestPuissance4
         private int _victoryType = -1;
         private int _nbTour = 0;
         private int _nbTourMax = 0;
-        private ConsoleColor VictoryBackColor = ConsoleColor.DarkRed;
-        private ConsoleColor VictoryForeColor = ConsoleColor.Black;
-        private ConsoleColor Player1BackColor = ConsoleColor.White;
-        private ConsoleColor Player1ForeColor = ConsoleColor.Black;
-        private ConsoleColor Player2BackColor = ConsoleColor.White;
-        private ConsoleColor Player2ForeColor = ConsoleColor.Black;
 
         public int[,] Tableau { get => _tableau; set => _tableau = value; } // Tableau[Colonnes, Lignes]
         public int NbLignes { get => _nbLignes; set => _nbLignes = value; }
@@ -32,17 +26,15 @@ namespace TestPuissance4
         public int NbTour { get => _nbTour; set => _nbTour = value; }
         public int NbTourMax { get => _nbTourMax; set => _nbTourMax = value; }
 
-        /// <summary>
+        
         /// Constructeur vide
-        /// </summary>
         public Grille()
         {
 
         }
 
-        /// <summary>
+        
         /// Constructeur semi
-        /// </summary>
         public Grille(int NbLignes, int NbColonnes)
         {
             this._nbColonnes = NbColonnes;
@@ -52,10 +44,8 @@ namespace TestPuissance4
             this.init();
         }
 
-        /// <summary>
+        
         /// Permet de cloner la grille
-        /// </summary>
-        /// <returns></returns>
         public Grille(Grille other)
         {
             //Grille other = (Grille)this.MemberwiseClone();
@@ -63,13 +53,7 @@ namespace TestPuissance4
 
             //other.Course_ID = new Course(Course_ID.Course_Id);
             //other.Name = String.Copy(Name);
-
-            this.VictoryBackColor = other.VictoryBackColor;
-            this.VictoryForeColor = other.VictoryForeColor;
-            this.Player1BackColor = other.Player1BackColor;
-            this.Player1ForeColor = other.Player1ForeColor;
-            this.Player2BackColor = other.Player2BackColor;
-            this.Player2ForeColor = other.Player2ForeColor;
+            
             this.Tableau = other.Tableau;
             this.NbLignes = other.NbLignes;
             this.NbColonnes = other.NbColonnes;
@@ -83,9 +67,8 @@ namespace TestPuissance4
             //return this;
         }
 
-        /// <summary>
+        
         /// Permet de vider la grille de ses valeures
-        /// </summary>
         public void init() {
             for (int i = 0; i < this.NbColonnes; i++)
             {
@@ -96,9 +79,8 @@ namespace TestPuissance4
             }
         }
 
-        /// <summary>
+        
         /// Permet d'affciher le tableau
-        /// </summary>
         public void Afficher()
         {
             string Trait = "      +";
@@ -118,80 +100,21 @@ namespace TestPuissance4
             Console.WriteLine(Trait);
             for (int i = 0; i < NbLignes; i++)
             {
-                Console.Write($"    {i + 1} |");
+                Console.Write("      |");
                 for (int j = 0; j < NbColonnes; j++)
                 {
-                    bool SpecialColor = true;
-                    switch (VictoryType)
-                    {
-                        case 1:
-                            if (j >= ColonneCaseGagnanteDebut && j < ColonneCaseGagnanteDebut + 4 && LigneCaseGagnanteDebut == i)
-                            {
-                                TextColor.SetForeground(VictoryForeColor);
-                                TextColor.SetBackGround(VictoryBackColor);
-                            }
-                            else
-                            {
-                                SpecialColor = false;
-                            }
-                            break;
-                        case 2:
-                            if (i >= LigneCaseGagnanteDebut && i < LigneCaseGagnanteDebut + 4 && ColonneCaseGagnanteDebut == j)
-                            {
-                                TextColor.SetForeground(VictoryForeColor);
-                                TextColor.SetBackGround(VictoryBackColor);
-                            }
-                            else
-                            {
-                                SpecialColor = false;
-                            }
-                            break;
-                        case 3:
-                            if ((LigneCaseGagnanteDebut == i && ColonneCaseGagnanteDebut == j) || (LigneCaseGagnanteDebut + 1 == i && ColonneCaseGagnanteDebut + 1 == j) || (LigneCaseGagnanteDebut + 2 == i && ColonneCaseGagnanteDebut + 2 == j) || (LigneCaseGagnanteDebut + 3 == i && ColonneCaseGagnanteDebut + 3 == j))
-                            {
-                                TextColor.SetForeground(VictoryForeColor);
-                                TextColor.SetBackGround(VictoryBackColor);
-                            }
-                            else
-                            {
-                                SpecialColor = false;
-                            }
-                            break;
-                        case 4:
-                            if ((LigneCaseGagnanteDebut == i && ColonneCaseGagnanteDebut == j) || (LigneCaseGagnanteDebut + 1 == i && ColonneCaseGagnanteDebut - 1 == j) || (LigneCaseGagnanteDebut + 2 == i && ColonneCaseGagnanteDebut - 2 == j) || (LigneCaseGagnanteDebut + 3 == i && ColonneCaseGagnanteDebut - 3 == j))
-                            {
-                                TextColor.SetForeground(VictoryForeColor);
-                                TextColor.SetBackGround(VictoryBackColor);
-                            }
-                            else
-                            {
-                                SpecialColor = false;
-                            }
-                            break;
-                        default:
-                            SpecialColor = false;
-                            TextColor.ResetColor();
-                            break;
-                    }
+
+                    
+                
                     if (Tableau[j, i] == 1)
                     {
-                        if (!SpecialColor)
-                        {
-                            TextColor.SetForeground(Player1ForeColor);
-                            TextColor.SetBackGround(Player1BackColor);
-                        }
+                        
                         Console.Write(" X ");
-                        TextColor.ResetColor();
                     }
                     else if (Tableau[j, i] == 2)
                     {
-                        if (!SpecialColor)
-                        {
-                            TextColor.SetForeground(Player1ForeColor);
-                            TextColor.SetBackGround(Player1BackColor);
-                        }
+                        
                         Console.Write(" O ");
-                        TextColor.ResetColor();
                     }
                     else
                     {
@@ -204,19 +127,11 @@ namespace TestPuissance4
                 Console.WriteLine(Trait);
             }
         }
-
-        /// <summary>
-        /// Permet de tester s'il y a un gagnant ou non
-        /// </summary>
-        /// <returns>Le numéro du gagnant</returns>
+        
         public int TesterGagner()
         {
 
             
-            //         1--->
-            //     4 2 3
-            //    /  |  \
-            //   v   v   v
 
 
             // Pour chaque cases dans la limite de -3 cases au niveau des lignes, test des combinaisons horizontale
@@ -370,23 +285,15 @@ namespace TestPuissance4
             return 0;
 
         }
-
-        /// <summary>
-        /// Permet de placer un jeton
-        /// </summary>
-        /// <param name="ligne">Ligne a laquelle il faut placer le jeton</param>
-        /// <param name="colonne">Colonne a laquelle il faut placer le jeton</param>
-        /// <param name="jeton">Numéro du joueur a qui appartient le joueur</param>
+        
         public void Positionner(int ligne, int colonne, int jeton)
         {
             this.Tableau[colonne, ligne] = jeton;
         }
-
-        /// <summary>
+        
         /// Permet de connaitre la case d'une colonne la plus basse disponible
-        /// </summary>
-        /// <param name="NumColonne">Numéro de la colonne a tester</param>
-        /// <returns>Case d'une colonne la plus basse disponible, si la réponse est -1, cela signifie que la colonne est pleine</returns>
+        /// Numéro de la colonne a tester
+        ///Case d'une colonne la plus basse disponible, si la réponse est -1, cela signifie que la colonne est pleine
         public int GetLigne(int NumColonne) {
             int ResultatPlusUn;
             for (ResultatPlusUn = 0; ResultatPlusUn < NbLignes; ResultatPlusUn++)
@@ -394,37 +301,17 @@ namespace TestPuissance4
             return ResultatPlusUn - 1;
         }
 
-        /// <summary>
-        /// Permet de modifier les couleurs de la grille
-        /// </summary>
-        /// <param name="victoryBackColor"></param>
-        /// <param name="victoryForeColor"></param>
-        /// <param name="player1BackColor"></param>
-        /// <param name="player1ForeColor"></param>
-        /// <param name="player2BackColor"></param>
-        /// <param name="player2ForeColor"></param>
-        public void SetSpecialColors(ConsoleColor victoryBackColor, ConsoleColor victoryForeColor, ConsoleColor player1BackColor, ConsoleColor player1ForeColor, ConsoleColor player2BackColor, ConsoleColor player2ForeColor)
-        {
-            VictoryBackColor = victoryBackColor;
-            VictoryForeColor = victoryForeColor;
-            Player1BackColor = player1BackColor;
-            Player1ForeColor = player1ForeColor;
-            Player2BackColor = player2BackColor;
-            Player2ForeColor = player2ForeColor;
-        }
-
-        /// <summary>
+        
+        
         /// Incrémente le nombre de coups joués dans la grille
-        /// </summary>
         public void IncrementNbTours()
         {
             this.NbTour++;
         }
 
-        /// <summary>
+        
         /// Indique si la grille a encore de l'espace vide
-        /// </summary>
-        /// <returns>True si la tableau a encore de la place</returns>
+        /// True si la tableau a encore de la place
         public bool YouCanPlay()
         {
             if (NbTour == NbTourMax)

@@ -9,3 +9,14 @@ E:\CoursEpsi1920\C#\Exos\TestPuissance4\TestPuissance4\bin\Debug\netcoreapp3.0\T
 E:\CoursEpsi1920\C#\Exos\TestPuissance4\TestPuissance4\bin\Debug\netcoreapp3.0\TestPuissance4.pdb
 E:\CoursEpsi1920\C#\Exos\TestPuissance4\TestPuissance4\obj\Debug\netcoreapp3.0\TestPuissance4.dll
 E:\CoursEpsi1920\C#\Exos\TestPuissance4\TestPuissance4\obj\Debug\netcoreapp3.0\TestPuissance4.pdb
+E:\CoursEpsi1920\C#\Puissance4EPSI\TestPuissance4\bin\Debug\netcoreapp3.0\TestPuissance4.exe
+E:\CoursEpsi1920\C#\Puissance4EPSI\TestPuissance4\bin\Debug\netcoreapp3.0\TestPuissance4.deps.json
+E:\CoursEpsi1920\C#\Puissance4EPSI\TestPuissance4\bin\Debug\netcoreapp3.0\TestPuissance4.runtimeconfig.json
+E:\CoursEpsi1920\C#\Puissance4EPSI\TestPuissance4\bin\Debug\netcoreapp3.0\TestPuissance4.runtimeconfig.dev.json
+E:\CoursEpsi1920\C#\Puissance4EPSI\TestPuissance4\bin\Debug\netcoreapp3.0\TestPuissance4.dll
+E:\CoursEpsi1920\C#\Puissance4EPSI\TestPuissance4\bin\Debug\netcoreapp3.0\TestPuissance4.pdb
+E:\CoursEpsi1920\C#\Puissance4EPSI\TestPuissance4\obj\Debug\netcoreapp3.0\TestPuissance4.csprojAssemblyReference.cache
+E:\CoursEpsi1920\C#\Puissance4EPSI\TestPuissance4\obj\Debug\netcoreapp3.0\TestPuissance4.AssemblyInfoInputs.cache
+E:\CoursEpsi1920\C#\Puissance4EPSI\TestPuissance4\obj\Debug\netcoreapp3.0\TestPuissance4.AssemblyInfo.cs
+E:\CoursEpsi1920\C#\Puissance4EPSI\TestPuissance4\obj\Debug\netcoreapp3.0\TestPuissance4.dll
+E:\CoursEpsi1920\C#\Puissance4EPSI\TestPuissance4\obj\Debug\netcoreapp3.0\TestPuissance4.pdb

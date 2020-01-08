@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "E:\\CoursEpsi1920\\C#\\Exos\\TestPuissance4\\TestPuissance4\\TestPuissance4.csproj",
+    "projectUniqueName": "E:\\CoursEpsi1920\\C#\\Puissance4EPSI\\TestPuissance4\\TestPuissance4.csproj",
     "projectName": "TestPuissance4",
-    "projectPath": "E:\\CoursEpsi1920\\C#\\Exos\\TestPuissance4\\TestPuissance4\\TestPuissance4.csproj",
-    "outputPath": "E:\\CoursEpsi1920\\C#\\Exos\\TestPuissance4\\TestPuissance4\\obj\\",
+    "projectPath": "E:\\CoursEpsi1920\\C#\\Puissance4EPSI\\TestPuissance4\\TestPuissance4.csproj",
+    "outputPath": "E:\\CoursEpsi1920\\C#\\Puissance4EPSI\\TestPuissance4\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.0"
